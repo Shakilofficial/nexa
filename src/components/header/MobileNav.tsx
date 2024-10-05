@@ -7,13 +7,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
-interface NavItem {
-  name: string;
+interface MenuItem {
+  label: string;
   href: string;
 }
 
 interface MobileNavProps {
-  navItems: NavItem[];
+  navItems: MenuItem[];
 }
 
 const MobileNav: FC<MobileNavProps> = ({ navItems }) => {
@@ -30,7 +30,7 @@ const MobileNav: FC<MobileNavProps> = ({ navItems }) => {
         <nav className="flex flex-col space-y-4 mt-8">
           {navItems.map((item) => (
             <Link
-              key={item.name}
+              key={item.label}
               href={item.href}
               className={`text-gray-600 dark:text-gray-300 hover:text-rose-600 dark:hover:text-rose-400 transition-colors ${
                 item.href === pathname
@@ -38,7 +38,7 @@ const MobileNav: FC<MobileNavProps> = ({ navItems }) => {
                   : ""
               }`}
             >
-              {item.name}
+              {item.label}
             </Link>
           ))}
         </nav>

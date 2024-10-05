@@ -29,7 +29,9 @@ const UserMenu: FC = () => {
       </DropdownMenuContent>
     </DropdownMenu>
   ) : (
-    <Button variant="custom" onClick={() => setIsLoggedIn(true)}>Login</Button>
+    <Button variant="custom" onClick={() => setIsLoggedIn(true)}>
+      Login
+    </Button>
   );
 };
 
