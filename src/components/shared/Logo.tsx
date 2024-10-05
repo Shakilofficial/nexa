@@ -9,10 +9,10 @@ export default function Logo({ className = "" }: LogoProps) {
   return (
     <Link href="/" className={`inline-block ${className}`}>
       <Image
-        src="/logo.svg"
-        alt="Company Logo"
-        width={120}
-        height={40}
+        src="/images/NEXA.svg"
+        alt="NEXA Logo"
+        width={100}
+        height={36}
         priority
       />
     </Link>

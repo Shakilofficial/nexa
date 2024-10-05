@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, LogOut } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "../shared/Logo";
 
 interface SidebarProps {
   isCollapsed: boolean;
@@ -25,7 +26,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
       transition={{ duration: 0.3 }}
     >
       <div className="flex items-center justify-between p-4">
-        {!isCollapsed && <h1 className="text-2xl font-bold">LOGO</h1>}
+        {!isCollapsed && <Logo />}
         <Button
           variant="ghost"
           size="icon"

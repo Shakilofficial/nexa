@@ -26,7 +26,7 @@ export default function DashboardHeader() {
       transition={{ duration: 0.5 }}
       className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
-      <div className="container mx-auto flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16 lg:max-w-7xl">
+      <div className="container mx-auto flex flex-col items-start justify-around space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16 lg:max-w-7xl">
         <h1 className="text-2xl font-bold">Dashboard</h1>
         <div className="flex w-full flex-col space-y-2 sm:w-auto sm:flex-row sm:space-x-2 sm:space-y-0 px-2 md:px-0">
           <Popover>
