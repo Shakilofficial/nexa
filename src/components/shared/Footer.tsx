@@ -78,7 +78,7 @@ const Footer: FC<FooterProps> = ({
                     className="text-gray-600 dark:text-gray-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors duration-300 flex items-center group"
                   >
                     <item.icon
-                      className="mr-3 group-hover:text-rose-600 transition-colors duration-300"
+                      className=" relative mr-3 -top-1 group-hover:text-rose-600 transition-colors duration-300"
                       size={18}
                     />
                     <span className="border-b border-transparent group-hover:border-rose-600 pb-1 transition-all duration-300">
